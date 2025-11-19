@@ -1,0 +1,11 @@
+{
+	"name": "test_GIT_pullrequest",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"serviceEndpoint": "https://uchihaclan.blob.core.windows.net/",
+			"accountKind": "StorageV2"
+		}
+	}
+}
