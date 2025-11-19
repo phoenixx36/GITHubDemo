@@ -1,0 +1,39 @@
+{
+	"name": "Nezuko-The-Azure-SSIS-IR",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "South India",
+				"nodeSize": "Standard_D2_v3",
+				"numberOfNodes": 2,
+				"maxParallelExecutionsPerNode": 8
+			},
+			"ssisProperties": {
+				"catalogInfo": {
+					"catalogServerEndpoint": "inosuke.database.windows.net",
+					"catalogPricingTier": "S1"
+				},
+				"customSetupScriptProperties": {
+					"blobContainerUri": "https://uchihaclan.blob.core.windows.net/customcodefortls",
+					"sasToken": {
+						"type": "SecureString",
+						"value": "**********"
+					}
+				},
+				"edition": "Standard",
+				"licenseType": "LicenseIncluded",
+				"dataProxyProperties": {
+					"connectVia": {
+						"type": "IntegrationRuntimeReference",
+						"referenceName": "Tanjiro-The-Self-Hosted-IR"
+					},
+					"stagingLinkedService": {
+						"type": "LinkedServiceReference",
+						"referenceName": "Kamado_The_Storage_Linked_Service"
+					}
+				}
+			}
+		}
+	}
+}

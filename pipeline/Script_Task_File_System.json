@@ -1,0 +1,58 @@
+{
+	"name": "Script_Task_File_System",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute SSIS package1",
+				"type": "ExecuteSSISPackage",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"packageLocation": {
+						"packagePath": "\\\\uchihaclan.file.core.windows.net\\ssdtexecution\\Script Task Repro.dtsx",
+						"type": "File",
+						"typeProperties": {
+							"accessCredential": {
+								"domain": "Azure",
+								"userName": "uchihaclan",
+								"password": {
+									"type": "SecureString",
+									"value": "**********"
+								}
+							}
+						}
+					},
+					"connectVia": {
+						"referenceName": "WinSCPTestIR",
+						"type": "IntegrationRuntimeReference"
+					},
+					"loggingLevel": "Verbose",
+					"logLocation": {
+						"logPath": "\\\\uchihaclan.file.core.windows.net\\ssdtexecution",
+						"type": "File",
+						"typeProperties": {
+							"accessCredential": {
+								"domain": "Azure",
+								"userName": "uchihaclan",
+								"password": {
+									"type": "SecureString",
+									"value": "**********"
+								}
+							}
+						}
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2024-07-31T13:59:19Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

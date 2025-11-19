@@ -1,0 +1,10 @@
+{
+	"name": "MPESQLDBInoskue",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/98a4f646-7377-449c-aefa-5fde7c5897c6/resourceGroups/PhoenixForce/providers/Microsoft.Sql/servers/inosuke",
+		"groupId": "sqlServer",
+		"fqdns": [
+			"inosuke.database.windows.net"
+		]
+	}
+}

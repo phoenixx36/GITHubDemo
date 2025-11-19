@@ -1,0 +1,17 @@
+{
+	"name": "Big_Mart_Sales_Source_DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Spark1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SparkObject",
+		"schema": [],
+		"typeProperties": {
+			"schema": "default",
+			"table": "big_mart_sales"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

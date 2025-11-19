@@ -1,0 +1,17 @@
+{
+	"name": "SparkObject2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "For New_Serverless_Cluster",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SparkObject",
+		"schema": [],
+		"typeProperties": {
+			"schema": "default",
+			"table": "large_data"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

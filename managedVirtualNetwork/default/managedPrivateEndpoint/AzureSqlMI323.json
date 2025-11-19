@@ -1,0 +1,10 @@
+{
+	"name": "AzureSqlMI323",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/98a4f646-7377-449c-aefa-5fde7c5897c6/resourceGroups/PhoenixForce/providers/Microsoft.Sql/managedInstances/kakashisqlmi",
+		"groupId": "managedInstance",
+		"fqdns": [
+			"kakashisqlmi.07224900dec3.database.windows.net"
+		]
+	}
+}

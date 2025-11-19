@@ -1,0 +1,10 @@
+{
+	"name": "AzPostgreFlex",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/98a4f646-7377-449c-aefa-5fde7c5897c6/resourceGroups/PhoenixForce/providers/Microsoft.DBforPostgreSQL/flexibleServers/azdb4postgresql-flexserver",
+		"groupId": "postgresqlServer",
+		"fqdns": [
+			"azdb4postgresql-flexserver.postgres.database.azure.com"
+		]
+	}
+}

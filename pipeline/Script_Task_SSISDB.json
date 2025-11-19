@@ -1,0 +1,35 @@
+{
+	"name": "Script_Task_SSISDB",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute SSIS package1",
+				"type": "ExecuteSSISPackage",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"packageLocation": {
+						"packagePath": "Testing/Azure_Enabled_Test/Script Task Repro.dtsx",
+						"type": "SSISDB"
+					},
+					"environmentPath": null,
+					"connectVia": {
+						"referenceName": "Nezuko-The-Azure-SSIS-IR",
+						"type": "IntegrationRuntimeReference"
+					},
+					"loggingLevel": "Verbose"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2024-07-31T13:59:19Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

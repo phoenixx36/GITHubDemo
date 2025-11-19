@@ -1,0 +1,66 @@
+{
+	"name": "AzureDatabricksDeltaLakeDataset1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "For MyCluster1_Workspace",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureDatabricksDeltaLakeDataset",
+		"typeProperties": {
+			"database": "default",
+			"table": "big_mart_sales"
+		},
+		"schema": [
+			{
+				"name": "Item_Identifier",
+				"type": "string"
+			},
+			{
+				"name": "Item_Weight",
+				"type": "double"
+			},
+			{
+				"name": "Item_Fat_Content",
+				"type": "string"
+			},
+			{
+				"name": "Item_Visibility",
+				"type": "double"
+			},
+			{
+				"name": "Item_Type",
+				"type": "string"
+			},
+			{
+				"name": "Item_MRP",
+				"type": "double"
+			},
+			{
+				"name": "Outlet_Identifier",
+				"type": "string"
+			},
+			{
+				"name": "Outlet_Establishment_Year",
+				"type": "long"
+			},
+			{
+				"name": "Outlet_Size",
+				"type": "string"
+			},
+			{
+				"name": "Outlet_Location_Type",
+				"type": "string"
+			},
+			{
+				"name": "Outlet_Type",
+				"type": "string"
+			},
+			{
+				"name": "Item_Outlet_Sales",
+				"type": "double"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

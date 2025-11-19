@@ -1,0 +1,9 @@
+{
+	"name": "ZenitsuAgatsumaDataFactory",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f15885eb-9468-473f-b2f0-c46a61aa6d85",
+		"tenantId": "16b3c013-d300-468d-ac64-7eda0820b6d3"
+	}
+}

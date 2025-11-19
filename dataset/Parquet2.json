@@ -1,0 +1,70 @@
+{
+	"name": "Parquet2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "myadflearning",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "default.big_mart_sales.parquet",
+				"container": "containeritachi"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "Item_Identifier",
+				"type": "UTF8"
+			},
+			{
+				"name": "Item_Weight",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "Item_Fat_Content",
+				"type": "UTF8"
+			},
+			{
+				"name": "Item_Visibility",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "Item_Type",
+				"type": "UTF8"
+			},
+			{
+				"name": "Item_MRP",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "Outlet_Identifier",
+				"type": "UTF8"
+			},
+			{
+				"name": "Outlet_Establishment_Year",
+				"type": "INT64"
+			},
+			{
+				"name": "Outlet_Size",
+				"type": "UTF8"
+			},
+			{
+				"name": "Outlet_Location_Type",
+				"type": "UTF8"
+			},
+			{
+				"name": "Outlet_Type",
+				"type": "UTF8"
+			},
+			{
+				"name": "Item_Outlet_Sales",
+				"type": "DOUBLE"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
