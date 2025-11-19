@@ -1,0 +1,28 @@
+{
+	"name": "Github_Pullrequest_test",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "test_GIT_pullrequest",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "default.big_mart_sales.parquet",
+				"container": "containeritachi"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "PAR1\u0015\u0000\u0015֮\t\u0015��\u0004\u0015�ة�\u000e\u001c\u0015��\u0001\u0015\u0000\u0015\u0006\u0015\b\u0000\u0000��\u0004@\u0004\u0000\u0000\u0000��\u0001\u0001\u0005\u0000\u0000\u0000FDA15\u0001\t\u0010DRC01\u0001\t\bFDN\t\u0012\u0010FDX07\u0001\u0012\u0010NCD19\u0001\t\u0010FDP36\t\t\bO10\t\t\u0000P\u0011\t\u0004H1\u0005-\u0010FDU28\t\u001b\u0000Y\t?\u0010FDA03\t\u0012\bX32\t\t\u0004S4",
+				"type": "String"
+			}
+		]
+	}
+}
